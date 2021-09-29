@@ -1,0 +1,14 @@
+/* Material Theming */
+
+:root {
+  --mdc-theme-primary: #f26522;
+  --mdc-theme-secondary: #7f9b4e;
+}
+
+html {
+  --mdc-typography-headline3-font-family: Bree Serif, serif;
+}
+
+.mdc-top-app-bar__title {
+  font-family: 'Faster One', cursive;
+}

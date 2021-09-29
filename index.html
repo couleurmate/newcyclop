@@ -4,23 +4,51 @@
     <title>Cycloperativa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Faster+One&display=swap" rel="stylesheet">
     <!-- import Material Icons from Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- import the Material stylesheet -->
-    <link rel="stylesheet" href="bundle.css">
+    
+    <!-- Import Material styles -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css">
+    <!-- Import my custom styles -->
+    <link rel="stylesheet" href="style.css">
+    
   </head>
+  
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+        <span class="mdc-top-app-bar__title">Cycloperativa</span>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+      </section>
+    </div>
+  </header>
+  
   <body class="mdc-typography">
     <!-- Apply Material headline3 style to this <h1> element -->
     <h1 class="mdc-typography--headline3">Cycloperativa</h1>
     <p>
-       A starter kit to get you up and running with Material Components for the Web. <a href="https://glitch.com/~material-starter-kit">Remix and start theming.</a>
+       A basic starter kit to get you up and running with Material Components for the Web, no build system required. <a href="https://glitch.com/~material-starter-kit-basic">Remix and start theming.</a>
+    </p>
+    <p>
+      For more advanced theming with Sass and a build system for modules, check out the <a href="https://glitch.com/~material-starter-kit-basic">Material Starter Kit</a>
     </p>
     <br>
     <button class="mdc-button mdc-button--raised">
       Hello World
     </button>
-    
-    <!-- import the Material javascript file -->
-    <script src="bundle.js" async></script>
   </body>
+  
+  <!-- Import Material scripts -->
+  <script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>
+  
+  <!--  Import my scripts  -->
+  <script src="./components.js"></script>
+  
 </html>
